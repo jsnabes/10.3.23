@@ -1,17 +1,40 @@
+#Greeting and ask name
+user_name = input("Hello! What is your name?  ")
+
 # Print question and ask user to enter integer
-prompt = int(input("Enter an integer between 1 and 100: "))
-list = range(0,101)
+prompt = int(input(f"Hi {user_name}. Enter an integer between 1 and 100: "))
+numbers = range(0, 99)
 
-# First if statement option
-for num in list:
-    if prompt < 60 and num % 2 != 0 :
-        print(f"You entered {prompt}")
+# First option (build specification 2a)
+for num in numbers:
+    if prompt < 60 and prompt % 2 != 0:
+        print(f"Thanks {user_name}. You entered {prompt}")
         print("Odd and less than 60")
+        break
 
-# Second if statement option
-    if prompt <24 and prompt <1 and num
-        print(f"You entered {prompt}")
+# Second option (build specification 2b)
+    elif prompt < 25 and prompt > 1 and prompt % 2 == 0:
+        print(f"Thanks {user_name}. You entered {prompt}")
         print("Even and less than 25")
+        break
 
-# Third if statement option
+# Third option (build specification 2c)
+    elif prompt > 25 and prompt < 61 and prompt % 2 == 0:
+        print(f"Thanks {user_name}. You entered {prompt}")
+        print("Even and between 26 and 60 inclusive")
+        break
+
+# Fourth option (build specification 2d)
+    elif prompt > 60 and prompt % 2 == 0:
+        print(f"Thanks {user_name}. You entered {prompt}")
+        print("Even and greater than 60")
+        break
+
+# Fifth option (build specification 2e)
+    elif prompt > 60 and prompt % 2 != 0:
+        print(f"Thanks {user_name}. You entered {prompt}")
+        print("Odd and greater than 60")
+        break
+
+
 

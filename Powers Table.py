@@ -11,7 +11,7 @@ while keep_going.lower() == "y":
         i += 1
         print(f"{i}         {i ** 2}          {i ** 3}")
 
-# # Extended challenge
+# # Extended challenge  ** Couldn't quite figure it out but tried!
 #     print("Here's a multiplication table for reference!")
 # # Print horizontal lines of multi table
 #     horizontal = ""
